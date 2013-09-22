@@ -4,6 +4,7 @@ export RPROMPT='[%~]'
 
 #aliases
 alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
+alias gettmux="tmux attach || tmux new"
 
 #shortcuts
 extract () {
