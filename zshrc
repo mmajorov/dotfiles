@@ -1,10 +1,15 @@
 #main config
 export PROMPT='%n@%m: '
 export RPROMPT='[%~]'
+HISTFILE=~/.zhistory
 
 #aliases
 alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
 alias gettmux="tmux attach || tmux new"
+alias ls='ls -F --color=auto'
+
+p() { cd ~/projects/$1; }
+compctl -W ~/projects/ -/ p
 
 #shortcuts
 extract () {
