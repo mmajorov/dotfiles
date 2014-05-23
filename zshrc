@@ -1,6 +1,6 @@
 #main config
-export PROMPT='%n@%m: '
-export RPROMPT='[%~]'
+export PROMPT='%F{green}%n@%m:%F{yellow}%~$%F{white} '
+export RPROMPT=''
 HISTFILE=~/.zhistory
 
 #aliases
