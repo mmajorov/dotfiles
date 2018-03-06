@@ -6,7 +6,7 @@ HISTFILE=~/.zhistory
 #aliases
 alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
 alias gettmux="tmux attach || tmux new"
-alias ls='ls -F --color=auto'
+alias ls='ls -G'
 
 p() { cd ~/projects/$1; }
 compctl -W ~/projects/ -/ p
